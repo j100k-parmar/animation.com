@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.animation{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(211, 35, 152);
+    animation-name:pink_box ;
+    animation-duration:5s; 
+}
+/* @keyframes pink_box{
+    from{
+        background-color: yellow;
+    }
+    to{
+        background-color: green;
+    }
+} */
+
+@keyframes pink_box{
+    10%{
+        background-color: red;
+    }
+    30%{
+        background-color:yellow;
+    }
+    60%{
+        background-color:lightblue;
+    }
+    90%{
+        background-color:lightgreen;
+    }
+}
+.animate{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color:purple;
+    animation-name: purple_box;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes purple_box{
+    0%{background-color:red;left:0px;top:0px;}
+    25%{background-color:yellow;left:200px;top:0px;}
+    50%{background-color:blue;left:200px;top:200px;}
+    75%{background-color:green;left:0px;top:200px;}
+    100%{background-color:brown;left:0px;top:0px;}
+
+}
